@@ -22,6 +22,7 @@ body
     {
         display:none;
     }
+    
 
 }
 .hero__bg__image__container {
@@ -65,24 +66,27 @@ body
 
 @media only screen and (max-width: 500px) 
 {
-    .hero__bg__image__container {
+    .hero__bg__image__container 
+    {
         width: 100%;
         height: 80vh; /* Occupy the entire viewport height */
     }
 
-    .hero__bg__overlay {
+    .hero__bg__overlay 
+    {
         width: 100%;
         height:80vh;
     }
 
-    .hero__bg__image {
+    .hero__bg__image 
+    {
         object-fit: cover; /* Ensure the image covers the entire container */
     }
 
-    h1 {
+    h1 
+    {
         color: pink;
     }
-    
 }
 
 .hero__content 
@@ -96,7 +100,14 @@ body
     color: #fff;
     z-index: 1; /* Place the content above the background image */
 }
-.hero-para
+
+
+.form-control,.form-floating
 {
-    
+    backdrop-filter: blur(3px)!important; /* Adjust the blur radius as needed */
+    background-color: rgba(0,0,0,0.5)!important; /* Adjust the background color and opacity as needed */
+}
+.form-control::placeholder
+{
+    color:white;
 }
