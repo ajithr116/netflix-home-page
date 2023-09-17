@@ -24,18 +24,21 @@ body
     }
 
 }
-.hero__bg__image__container {
+.hero__bg__image__container 
+{
     width: 100%;
     height: 80vh;
 }
 
-.hero__bg__image {
+.hero__bg__image 
+{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.hero__bg__overlay {
+.hero__bg__overlay 
+{
     position: absolute;
     inset: 0;
     width: 100%;
@@ -51,32 +54,38 @@ body
 
 @media only screen and (min-width: 768px) 
 {
-    .hero__bg__image__container {
+    .hero__bg__image__container 
+    {
         height: 100vh;
     }
 
-    .hero__bg__overlay {
+    .hero__bg__overlay 
+    {
         height: 100vh;
     }
 }
 
 @media only screen and (max-width: 500px) 
 {
-    .hero__bg__image__container {
+    .hero__bg__image__container 
+    {
         width: 100%;
         height: 90vh; /* Occupy the entire viewport height */
     }
 
-    .hero__bg__overlay {
+    .hero__bg__overlay 
+    {
         width: 100%;
         height:90vh;
     }
 
-    .hero__bg__image {
+    .hero__bg__image 
+    {
         object-fit: cover; /* Ensure the image covers the entire container */
     }
 
     h2 {
         color: pink;
     }
+    
 }
