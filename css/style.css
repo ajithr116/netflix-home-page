@@ -49,7 +49,7 @@ body
     );
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     .hero__bg__image__container {
         height: 100vh;
     }
@@ -57,24 +57,46 @@ body
     .hero__bg__overlay {
         height: 100vh;
     }
-}
+    h1
+    {
+        color:pink;
+    }
+} */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) 
+{
     .hero__bg__image__container {
         width: 100%;
-        height: 100vh; /* Occupy the entire viewport height */
+        height: 80vh; /* Occupy the entire viewport height */
     }
 
     .hero__bg__overlay {
         width: 100%;
-        height:100%;
+        height:80vh;
     }
 
     .hero__bg__image {
         object-fit: cover; /* Ensure the image covers the entire container */
     }
 
-    h2 {
+    h1 {
         color: pink;
     }
+    
+}
+
+.hero__content 
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width:90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1; /* Place the content above the background image */
+}
+.hero-para
+{
+    
 }
