@@ -12,7 +12,7 @@ body
 {
     border-radius: 5px;
 }
-/* @media only screen and (max-width: 600px)
+@media only screen and (max-width: 600px)
 {
     .header-logo
     {
@@ -23,47 +23,19 @@ body
         display:none;
     }
 
-} */
-/* Your existing CSS code... */
-
-@media only screen and (max-width: 600px) {
-    .header-logo {
-        width: 200px; /* Increase the logo size */
-    }
-
-    .lang {
-        display: none;
-    }
-
-    .btn {
-        padding: 8px 16px; /* Increase button padding */
-        font-size: 16px; /* Increase button font size */
-    }
-
-    .signIn {
-        width: auto; /* Allow the "Sign-in" button to grow as needed */
-    }
-
-    .navbar-collapse {
-        flex-direction: column; /* Stack navbar items vertically */
-    }
 }
-
-.hero__bg__image__container 
-{
+.hero__bg__image__container {
     width: 100%;
     height: 80vh;
 }
 
-.hero__bg__image 
-{
+.hero__bg__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.hero__bg__overlay 
-{
+.hero__bg__overlay {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -77,43 +49,32 @@ body
     );
 }
 
-@media only screen and (min-width: 768px) 
-{
-    .hero__bg__image__container 
-    {
+@media only screen and (min-width: 768px) {
+    .hero__bg__image__container {
         height: 100vh;
     }
 
-    .hero__bg__overlay 
-    {
+    .hero__bg__overlay {
         height: 100vh;
     }
 }
 
-@media only screen and (max-width: 500px) 
-{
-    .hero__bg__image__container 
-    {
+@media only screen and (max-width: 500px) {
+    .hero__bg__image__container {
         width: 100%;
-        height: 90vh; /* Occupy the entire viewport height */
+        height: 100vh; /* Occupy the entire viewport height */
     }
 
-    .hero__bg__overlay 
-    {
+    .hero__bg__overlay {
         width: 100%;
-        height:90vh;
+        height:100%;
     }
 
-    .hero__bg__image 
-    {
+    .hero__bg__image {
         object-fit: cover; /* Ensure the image covers the entire container */
     }
 
     h2 {
         color: pink;
-    }
-    .header-logo
-    {
-        width:200px;
     }
 }
