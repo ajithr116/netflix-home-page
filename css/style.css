@@ -1,6 +1,6 @@
 body
 {
-    background-color: green;
+    background-color: #232323;
 }
 
 .drop
@@ -105,9 +105,40 @@ body
 .form-control,.form-floating
 {
     backdrop-filter: blur(3px)!important; /* Adjust the blur radius as needed */
-    background-color: rgba(0,0,0,0.5)!important; /* Adjust the background color and opacity as needed */
+    background-color: rgba(0,0,0,0.1)!important; /* Adjust the background color and opacity as needed */
 }
-.form-control::placeholder
+.form-control::placeholder,label
 {
     color:white;
 }
+
+
+/* section 1 */
+.feature__image__container 
+{
+    width: 100%;
+    position: relative;
+}
+
+.feature__image 
+{
+    width: 100%;
+}
+
+.feature__backgroud__video__container 
+{
+    position: absolute;
+    width: 100%;
+    top: 24%;
+    left: 13%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    z-index: 1;
+}
+
+.feature__backgroud__video {
+    width: 100%;
+}
+
+/* section 1 end */
