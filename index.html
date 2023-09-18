@@ -12,7 +12,7 @@
         </style>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
         <title>Netflix Home</title>
     
         <meta name="description" content="LinkedIn home page">
@@ -24,6 +24,9 @@
         <!-- Defer the Bootstrap JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" defer></script>
         <!-- Defer other non-critical JavaScript here if needed -->
+
+        
+
     </head>
     
 <body>
@@ -55,15 +58,28 @@
             <p class="text-sm hero-para justify-content-center text-center fs-3 fw-medium">Join today. Cancel anytime</p>
             <p class="text-sm hero-para justify-content-center text-center fs-5 fw-small ">Ready to watch? Enter your email to create your membership.</p>
             
-            <div class="row justify-content-center">
-                <div class="col-md-4 col-sm-6">
-                    <div class="form-floating">
-                        <input type="email" class="form-control form-control-lg rounded-3 input-lg text-light" placeholder="Enter address" for="email">
-                        <label for="email" class="email-label">Email address</label>
-                    </div> 
-                    <button class="btn btn-danger mt-3 px-5 text-sm-center fs-6 ">get start  <span class="fas fa-arrow-right"></span></button>
+            <form>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="form-floating">
+                            <input type="email" class="form-control form-control-lg rounded-3 input-lg text-light" placeholder="Enter address" for="email" id="myInput">
+                            <label for="email" class="email-label">Email address</label>
+                        </div> 
+                        <button class="btn btn-danger mt-3 px-5 text-sm-center fs-6 " onclick="checkInput()">get start  <span class="fas fa-arrow-right"></span></button>
+                        <script>
+                            function checkInput() {
+                                var inputElement = document.getElementById("myInput");
+                                
+                                if (inputElement.value === "") {
+                                    alert("Input is empty!");
+                                } else {
+                                    alert("Success! Input is not empty.");
+                                }
+                            }
+                        </script>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
     <!-- hero section ends  -->
@@ -270,9 +286,20 @@
                 <h2 class="text-center my-4">Ready to watch? Enter your email to create or restart your membership.</h2>
                 <div class="row justify-content-center">
                     <div class="form-floating col-sm-4 mx-auto text-center">
-                        <input type="email" class="form-control form-control-lg rounded-3 input-lg text-light" placeholder="Enter address" for="email">
+                        <input type="email" class="form-control form-control-lg rounded-3 input-lg text-light" placeholder="Enter address" for="email" id="myInput2">
                         <label for="email" class="email-label">Email address</label>
-                        <button class="btn btn-danger mt-3 px-5 text-sm-center fs-6">get started  <span class="fas fa-arrow-right"></span></button>
+                        <button class="btn btn-danger mt-3 px-5 text-sm-center fs-6" onclick="checkInput()">get started  <span class="fas fa-arrow-right"></span></button>
+                        <script>
+                            function checkInput() {
+                                var inputElement = document.getElementById("myInput2");
+                                
+                                if (inputElement.value === "") {
+                                    alert("Input is empty!");
+                                } else {
+                                    alert("Success! Input is not empty.");
+                                }
+                            }
+                        </script>
                     </div>
                 </div>                
             </div>
