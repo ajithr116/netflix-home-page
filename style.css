@@ -113,7 +113,7 @@ body
 }
 
 
-/* section 1 */
+/* section 1,2,3,4 */
 .feature__image__container 
 {
     width: 100%;
@@ -141,4 +141,12 @@ body
     width: 100%;
 }
 
-/* section 1 end */
+/* section 1,2,3,4 end */
+
+/* section 5  questions*/
+.cards
+{
+    background-color: #232323;
+    color:white;
+}
+/* section 5 ends  */
